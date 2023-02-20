@@ -1,0 +1,5 @@
+ALTER TABLE `bbc_friends` ADD `create_at` DATE NULL AFTER `mobile_no`;
+ALTER TABLE `bbc_friends` ADD `s_name` VARCHAR(255) NOT NULL AFTER `name`;
+ALTER TABLE `bbc_friends` ADD `mobile_no` VARCHAR(255) NOT NULL AFTER `skill`;   
+CREATE TABLE `bbc_friends`.`bbc_friends` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `age` INT NOT NULL , `education` TEXT NOT NULL , `married` VARCHAR(255) NOT NULL , `skill` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ 
